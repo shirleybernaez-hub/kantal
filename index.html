@@ -205,9 +205,15 @@
         ];
         spray.forEach(p => createProductCard(...p, 'grid-spray'));
 
+        const peces = [
+            ['pt1', 'Alimento para Peces (226g)', 'alimento_para_peces_226gr.jpg', 'alimento_para_peces_226gr.pdf', 'pecesytortugas']
+            // Aquí irás agregando las siguientes fichas separadas por comas, por ejemplo:
+            // ['pt2', 'Nombre Siguiente', 'imagen2.jpg', 'ficha2.pdf', 'pecesytortugas']
+        ];
+        peces.forEach(p => createProductCard(...p, 'grid-peces'));
+
         createProductCard('a1', 'Antiparasitario Pájaros', 'antiparasitariopajaros.jpg', 'antiparasitariopajaros.pdf', 'aves', 'grid-aves');
         createProductCard('r1', 'Alimento Hamster', 'alimentohamster.jpg', 'alimentohamster.pdf', 'roedores', 'grid-roedores');
-        createProductCard('pt1', 'Alimento para Peces (226g)', 'alimento_para_peces_226gr.jpg', 'alimento_para_peces_226gr.pdf', 'pecesytortugas', 'grid-peces');
 
         function openTab(evt, tabId) {
             const contents = document.getElementsByClassName("category-content");
