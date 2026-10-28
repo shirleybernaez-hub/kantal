@@ -62,7 +62,7 @@
             <button class="tab-button" onclick="openTab(event, 'cat-spray')">Productos en Spray (4)</button>
             <button class="tab-button" onclick="openTab(event, 'cat-arena')">Arena Gatos (0)</button>
             <button class="tab-button" onclick="openTab(event, 'cat-aves')">Aves (1)</button>
-            <button class="tab-button" onclick="openTab(event, 'cat-peces')">Peces/Tortugas (0)</button>
+            <button class="tab-button" onclick="openTab(event, 'cat-peces')">Peces/Tortugas (1)</button>
             <button class="tab-button" onclick="openTab(event, 'cat-roedores')">Roedores (1)</button>
             <button class="tab-button" onclick="openTab(event, 'cat-alimento')">Alimento Perros (0)</button>
         </nav>
@@ -97,8 +97,12 @@
             <section class="grid grid-cols-1 md:grid-cols-3 gap-8" id="grid-roedores"></section>
         </div>
 
+        <div id="cat-peces" class="category-content">
+            <div class="mb-6"><h3 class="text-xl font-black uppercase category-title">Peces y Tortugas (1)</h3><div class="h-1 w-12 bg-black mt-1"></div></div>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8" id="grid-peces"></section>
+        </div>
+
         <div id="cat-arena" class="category-content"><div class="p-20 text-center text-zinc-300 font-bold uppercase tracking-widest text-xs">Próximamente...</div></div>
-        <div id="cat-peces" class="category-content"><div class="p-20 text-center text-zinc-300 font-bold uppercase tracking-widest text-xs">Próximamente...</div></div>
         <div id="cat-alimento" class="category-content"><div class="p-20 text-center text-zinc-300 font-bold uppercase tracking-widest text-xs">Próximamente...</div></div>
     </div>
 
@@ -203,6 +207,7 @@
 
         createProductCard('a1', 'Antiparasitario Pájaros', 'antiparasitariopajaros.jpg', 'antiparasitariopajaros.pdf', 'aves', 'grid-aves');
         createProductCard('r1', 'Alimento Hamster', 'alimentohamster.jpg', 'alimentohamster.pdf', 'roedores', 'grid-roedores');
+        createProductCard('pt1', 'Alimento para Peces (226g)', 'alimento_para_peces_226gr.jpg', 'alimento_para_peces_226gr.pdf', 'pecesytortugas', 'grid-peces');
 
         function openTab(evt, tabId) {
             const contents = document.getElementsByClassName("category-content");
